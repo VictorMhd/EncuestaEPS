@@ -1,0 +1,163 @@
+*{
+    margin: 0px;
+    font-family: 'Anonymous Pro Bold Italic', arial
+}
+
+.img{
+    margin-left: 40px;
+}
+
+.formulario{
+    width: 950px;
+    height: 470px;
+    background: white;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 15px 20px 40px #000;
+    
+}
+
+.titulo1{
+    background: #666;
+    color: white;
+    margin: auto;
+    border: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.formulario1{
+    margin-left: 20px;
+}
+
+.texto{
+    margin-left: 50px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.experiencia{
+    font-size: 20px; 
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.arriba{
+    display: flex;
+    margin-top: 25px;
+}
+
+.boton2{
+    display: flex;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background:white;
+    color: black;
+    border: white ;
+    border-radius: 5px;
+    margin-left: 750px;
+    text-align: center;
+}
+
+.centrar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cv{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+} 
+
+.select{
+    font-size: 15px; 
+    width: 220px;
+    height:20px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.l{
+    margin-left: 40px;
+    margin-top: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.s{
+    font-size: 20px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.c{
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+.ultima{
+    margin-left: 40px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.cedula{
+    margin-top: 20px;
+}
+
+.contenedor-botones {
+	width: 50%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+    margin-left: 45%;
+    margin-top: 30px;
+}
+
+.boton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 50px;
+	background: #141414;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton.tres::after {
+	content: "";
+	width: 100%;
+	height: 300px;
+	background: #18a362;
+	position: absolute;
+	z-index: 1;
+	top: -300px;
+	left: 0;
+	transition: .4s ease-in-out all;
+	border-radius: 0px 0px 300px 300px;
+}
+
+.boton.tres:hover::after {
+	top: 0;
+}

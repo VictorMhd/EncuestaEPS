@@ -1,0 +1,33 @@
+.pregresp {
+    border: 1px solid #7DA5E0;
+    padding: 10px;
+    margin: 10px;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    }
+    
+.pregunta {
+    color: #7DA5E0;
+}
+    
+.respuestas {
+    color: #000000;
+}
+
+.boton{
+        text-align: center;
+        font-size: 30px;
+        margin-top: 20px;
+        padding: 7px;
+        background:#393b33;
+        color: white;
+        border: #43554e ;
+        border-radius: 5px;
+}
+    
+.centrar{
+        margin-top: 20px;
+        text-align: center;
+}
+

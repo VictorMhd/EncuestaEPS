@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+</body>
+</html>
+    <div class="imagenes">
+        <img v-bind:src="require('/src/imagenes/escudoUnal_black.png')" alt="escudoUNAL">
+        <a href="#" class="box">
+            <button v-if="!is_auth" v-on:click="loadInicio" class="inicio"> Inicio </button>
+            <div v-on:click="loadInicio" class="home"><i class="fa fa-home"></i></div>
+        </a>
+    </div>
+    <form  class="formulario">
+        <div class="margin">
+            <h1 class="titulo1">Encuesta Sobre Coronavirus</h1>
+        </div>
+        <form @submit.prevent="processFormulario">
+            <div class="formulario1">
+                <a class="texto" >Cedula</a>
+                <input class="experiencia" type="number" v-model="form.salario" required/>
+                </select>
+
+                <div class="field-estudio">
+                    <a class="texto" >¿Haz presentado temperaturas mas de 37 grados?</a>
+                    <select name="" id="">
+                        <option value="valor1">Verdadero</option>
+                        <option value="valor2">Falso</option>
+                     </select>
+                </div>
+
+                <div class="field-estudio">
+                    <a class="texto" >¿Haz tenido contacto con personas diagnosticadas con Covid-19?</a>
+                    <select name="" id="">
+                        <option value="valor1">Verdadero</option>
+                        <option value="valor2">Falso</option>   
+                    </select>
+                </div>
+
+            ¿Haz tenido contacto con personas diagnosticadas con Covid-19?:
+            <INPUT type = checkbox name = archivo value = "Verdadero" > SI
+            <INPUT type = checkbox name = archivo value ="Verdadero" > NO
+            <INPUT type = checkbox name = archivo value ="Verdadero" > NO SÉ
+        <PRE>
+        <div class="field-estudio">
+        <a class="texto" >¿Haz tenido contacto con personas diagnosticadas con Covid-19?</a>
+        <select name="" id="">
+            <option value="valor1">Verdadero</option>
+             <option value="valor2">Falso</option>   
+            </select>
+                    </div>
+            </select>
+
+            </div>
+                    </div>
+                </select>
+                </div>
+                <div class="field-disponibilidad">
+                    <a class="text">Haz tenido dificultad para respirar </a>
+                    <select name="" id="">
+                        <option value="valor1">Verdadero</option>
+                        <option value="valor2">Falso</option>   
+                    </select>
+                </div>
+
+
+                <div class="centrar">
+                <button  class="boton" v-on:click="enviar()">Enviar</button>
+                </div>
+            </div>
+        </form> 
+    </form> 
+    <div class="redes2">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+    </div>
