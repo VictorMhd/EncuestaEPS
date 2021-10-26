@@ -13,9 +13,11 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls.static import static
 from django.urls import path
 from rest_framework_simplejwt.views import (TokenObtainPairView, TokenRefreshView)
 from authApp import views
+from django.conf import settings
 urlpatterns = [
     path('login/', TokenObtainPairView.as_view()), #iniciar sesión
     path('refresh/', TokenRefreshView.as_view()), #refrescar el token
@@ -24,3 +26,4 @@ urlpatterns = [
     path('cedula/', views.allCedulaView.as_view())
 
 ]
++ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
